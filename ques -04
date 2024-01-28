@@ -1,0 +1,53 @@
+
+Selection Sort is a simple sorting algorithm that works by repeatedly selecting the minimum (or maximum) element from the unsorted portion of the array and putting it at the beginning (or end) of the sorted portion. The algorithm maintains two subarrays: the sorted subarray, which is built up from left to right, and the unsorted subarray.
+
+Let's delve into the fundamental concepts and step-by-step process of the Selection Sort algorithm:
+
+Algorithm Steps:
+
+Initialization:
+
+The array is divided into two parts: the left part, initially empty, represents the sorted subarray, and the right part represents the unsorted subarray.
+Initially, the sorted subarray is empty, and the unsorted subarray is the entire array.
+Finding the Minimum Element:
+
+The algorithm scans the unsorted subarray to find the minimum element.
+It keeps track of the index of the minimum element during the scan.
+Swapping:
+
+Once the minimum element is found, it is swapped with the first element of the unsorted subarray.
+This places the minimum element at the end of the sorted subarray and expands the sorted subarray by one element.
+Updating Subarrays:
+
+The boundaries of the sorted and unsorted subarrays are updated. The sorted subarray now includes one more element, and the unsorted subarray has one less element.
+Repeat:
+
+Steps 2-4 are repeated until the entire array is sorted.
+In each iteration, the size of the sorted subarray increases by one, and the unsorted subarray decreases by one element.
+Example:
+Let's consider an example with the array [64, 25, 12, 22, 11]:
+
+Initial state: Sorted subarray = [], Unsorted subarray = [64, 25, 12, 22, 11]
+
+Find the minimum in the unsorted subarray: Minimum = 11 at index 4.
+
+Swap the minimum with the first element of the unsorted subarray: [11, 25, 12, 22, 64]
+
+Update subarrays: Sorted subarray = [11], Unsorted subarray = [25, 12, 22, 64]
+
+Repeat the process for the remaining unsorted subarray.
+
+After multiple iterations: [11, 12, 22, 25, 64]
+
+Key Principles:
+
+Selection Sort is an in-place sorting algorithm, meaning it does not require additional memory.
+It has a time complexity of O(n^2), making it inefficient for large datasets.
+The algorithm is not stable, meaning it may change the relative order of equal elements.
+Selection Sort has a straightforward implementation but is generally outperformed by more advanced sorting algorithms for larger datasets.
+In summary, Selection Sort repeatedly selects the minimum element from the unsorted subarray and swaps it with the first element of the unsorted subarray until the entire array is sorted. While conceptually simple, it is not the most efficient sorting algorithm for large datasets.
+
+
+
+
+
